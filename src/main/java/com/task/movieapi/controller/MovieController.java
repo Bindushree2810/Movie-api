@@ -21,6 +21,10 @@ public class MovieController {
 	    public MovieController(MovieService movieService) {
 	        this.movieService = movieService;
 	    }
+	    @GetMapping("/start")
+	    public String start() {
+	        return "Movie API is running";
+	    }
 
 	    // Add new movie
 	    @PostMapping
